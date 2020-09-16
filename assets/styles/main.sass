@@ -1,0 +1,25 @@
+@import variables
+@import buttons
+
+html, body, #__nuxt, #__layout, main
+  height: 100%
+  width: 100%
+  margin: 0
+  padding: 0
+
+html
+  overflow: hidden
+
+body
+  font-family: Arial, sans-serif
+  +appGradient()
+
+.wtn-content
+  padding: 0 100px
+
+@media all and (max-width: $tablet_media)
+  .wtn-content
+    padding: 0 50px
+@media all and (max-width: $smartphone_media)
+  .wtn-content
+    padding: 0 10px
