@@ -24,5 +24,5 @@ export default {
   +setGridAuto(auto, 10px, "columns")
   a
     text-decoration: none
-    color: $c_brown
+    color: white
 </style>

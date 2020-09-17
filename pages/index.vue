@@ -3,19 +3,20 @@
     <div class="wtn-view-content">
       <div class="wtn-view-desc">
         <h1>{{ $t('main_ttl') }}</h1>
-        <nuxt-link class="wtn-button-def wtn-search-btn" to="search">{{$t('find_movies')}}</nuxt-link>
+        <input type="text" v-model="searchString" :placeholder="$t('movie_ttl_ph')"/>
+        <nuxt-link :class="['wtn-button-def wtn-search-btn', {'wtn-disabled' : !searchString.length}]" :to="`results?str=${searchString}`">{{ $t('find_movies') }}
+        </nuxt-link>
       </div>
-      <div class="wtn-random-images" :style="setViewImage()"></div>
+      <div class="wtn-main-image"></div>
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  methods: {
-    setViewImage() {
-      const imageID = Math.floor(Math.random() * 3) + 1;
-      return `background: url("images/${imageID}.png") no-repeat; background-size: contain`;
+  data() {
+    return {
+      searchString: ""
     }
   }
 }
@@ -27,20 +28,21 @@ export default {
   height: 100%
 
   h1
-    color: $c_brown
+    color: white
 
 .wtn-view-content
   height: 100%
   align-items: center
-  +setGrid(auto auto, 20px, null, null, "columns")
+  +setGrid(1fr 1fr, 40px, null, null, "columns")
 
 .wtn-view-desc
   justify-content: flex-end
   +setGridAuto(auto, 20px, "rows")
 
-.wtn-random-images
-  background-position: left
+.wtn-main-image
   min-height: 600px
+  background: url("../static/images/1.png") left no-repeat
+  background-size: contain
 
 
 @media all and (max-width: $smartphone_media)

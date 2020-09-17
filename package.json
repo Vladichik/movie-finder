@@ -11,7 +11,9 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.12.0",
     "nuxt": "^2.14.0",
-    "nuxt-i18n": "^6.13.8"
+    "nuxt-i18n": "^6.13.8",
+    "vueperslides": "^2.10.8",
+    "@saeris/vue-spinners": "^1.0.8"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.5",

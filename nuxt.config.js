@@ -51,7 +51,6 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     ['nuxt-i18n',
       {
@@ -62,9 +61,9 @@ export default {
             file: 'en.js'
           },
           {
-            name: 'עברית',
-            code: 'he',
-            file: 'he.js'
+            name: 'Español',
+            code: 'es',
+            file: 'es.js'
           },
           {
             name: 'Русский',

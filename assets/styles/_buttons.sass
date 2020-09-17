@@ -24,9 +24,14 @@
   &:active
     +shadowGenerator(inset 0 0 5px 0 rgba(0,0,0,0.75))
 
+  &:disabled, &.wtn-disabled
+    background: $dark_grey
+    cursor: default
+    pointer-events: none
+
 
 
 .wtn-search-btn
   height: 50px
   color: white
-  background: $c_brown
+  background: $c_blue
