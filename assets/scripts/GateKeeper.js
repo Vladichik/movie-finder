@@ -13,7 +13,7 @@ export default class GateKeeper {
    * @return {Promise<unknown[] | []>}
    */
   static fetchMoviesByTitle(title, noDirector) {
-    return axios.get(`${Constants.BASE_URL}&s=${title}`).then(response => {
+    return axios.get(`${Constants.BASE_URL}&s=${title}&type=movie`).then(response => {
       if (response.data.Response === "True" && response.data.Search.length) {
         if (noDirector) {
           return response.data.Search
