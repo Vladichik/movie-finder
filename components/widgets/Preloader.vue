@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style lang="sass">
-@import "../assets/styles/variables"
+@import "../../assets/styles/variables"
 
 .wtn-main-app-preloader
   position: absolute

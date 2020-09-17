@@ -10,5 +10,6 @@ export default {
   year: 'Year',
   director: "Director",
   longer_process: "This process might take longer since it fetches directors for each movie (might take about 40 seconds)",
-  faster_process: "This is faster process since we do not fetch director name for each movie"
+  faster_process: "This is faster process since we do not fetch director name for each movie",
+  no_results: "No results found"
 }

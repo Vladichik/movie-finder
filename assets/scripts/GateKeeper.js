@@ -21,14 +21,14 @@ export default class GateKeeper {
           return this.getEachMovieDirectorAndEnrichData(response.data.Search);
         }
       } else {
-        return [];
+        return null;
       }
     })
   }
 
   /**
    * Since SEARCH API with parameter "&s=blabla" doesn't return a director name, we need to fetch it from
-   * IMDB/TITLE API and after enrich each movie object with found director name.
+   * IMDB/TITLE API and after that to enrich each movie object with found director name.
    * @param movies - array of received movies
    * @return {Promise<unknown[]>}
    */

@@ -9,5 +9,6 @@ export default {
   year: 'Año',
   director: "Director",
   longer_process: "Este proceso puede llevar más tiempo, ya que busca directores para cada película.",
-  faster_process: "Este es un proceso más rápido ya que no obtenemos el nombre del director para cada película."
+  faster_process: "Este es un proceso más rápido ya que no obtenemos el nombre del director para cada película.",
+  no_results: "No se han encontrado resultados"
 }
